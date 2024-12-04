@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d900ff;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(to right, #ff6ad7, #ff2dc7);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn-primary {
+    background-color: #4e0062;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Seção de Serviços */
+.services {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.services .service-item {
+    text-align: center;
+    padding: 30px;
+    background-color: #f4f4f4;
+    margin: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.services .service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.services .service-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #d900ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    .services .service-item {
+        margin: 10px;
+    }
+}
